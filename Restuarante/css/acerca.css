@@ -1,0 +1,257 @@
+/* General */
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: 'Dancing Script', cursive;
+    background-color: #000;
+    color: #ffc107;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img {
+    max-height: 150px;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #000;
+    color: #ffc107;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.creadores-section, .proposito-section, .tarjetas-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.creadores-container, .tarjetas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.creador-card, .tarjeta {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.creador-card img, .tarjeta img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sección Tarjetas Flotantes */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.floating-card {
+    background-color: #000;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-card:hover {
+    transform: scale(1.05);
+}
+
+.floating-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.floating-card h3 {
+    margin: 15px 0;
+}
+
+.floating-card button {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.floating-card button:hover {
+    background-color: #e0a800;
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #111;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ffc107;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-body p {
+    margin-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ffc107;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e0a800;
+}
+/* Estilos para Misión y Visión */
+.proposito-section {
+    padding: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.proposito-section h2 {
+    font-size: 36px;
+    color: #ffc107;
+    margin-bottom: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%; /* Ajustar para que ambos bloques quepan en la misma fila */
+    position: relative;
+}
+
+.column h3 {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Icono de Google en la esquina inferior */
+.icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}

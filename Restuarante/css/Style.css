@@ -1,0 +1,177 @@
+/* General */
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #111;
+}
+
+header {
+    font-family: 'Dancing Script', cursive;
+    background-color: #000;
+    color: #ffc107;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img {
+    max-height: 150px;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Menú */
+.menu-section {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    color: #ffc107;
+    margin-bottom: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu-section ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres elementos por fila */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    border: 2px solid #ffc107; /* Contorno del <li> */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.menu-section ul li:hover {
+    transform: scale(1.03); /* Efecto hover */
+}
+
+.menu-item {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px; 
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Animación al pasar el mouse */
+}
+
+.menu-item img {
+    width: 200px; /* Tamaño más grande de las imágenes */
+    height: 200px;
+    border-radius: 50%; /* Forma ovalada */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.menu-description {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.menu-description strong {
+    font-size: 20px;
+    color: #ffc107;
+    margin: 20px;
+}
+
+.menu-description p {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffc107;
+    margin-top: 10px;
+}
+
+/* Botón de compra */
+.buy-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buy-button i {
+    font-size: 1.2em;
+}
+
+.buy-button:hover {
+    background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #ffc107;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
